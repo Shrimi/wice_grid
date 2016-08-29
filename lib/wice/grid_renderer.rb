@@ -370,12 +370,12 @@ module Wice
       klass = Columns::ViewColumn
       if options[:attribute] &&
         col_type_and_table_name = @grid.declare_column(
-          column_name:          options[:attribute],
-          model:                options[:model],
-          custom_filter_active: options[:custom_filter],
-          table_alias:          options[:table_alias],
-          filter_type:          options[:filter_type],
-          assocs:               assocs
+          column_name =          options[:attribute],
+          model =                options[:model],
+          custom_filter_active = options[:custom_filter],
+          table_alias =         options[:table_alias],
+          filter_type =          options[:filter_type],
+          assocs =               assocs
         )
 
         # [ActiveRecord::ConnectionAdapters::AbstractMysqlAdapter::Column, String, Boolean]
